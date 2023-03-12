@@ -7,15 +7,16 @@ TagManager:
   - PickUp
   - NPC
   - Wall
+  - Hidable
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - whatIsGround
   - Water
   - UI
-  - 
-  - 
+  - whatIsPlayer
+  - whatIsHiding
   - 
   - 
   - 
