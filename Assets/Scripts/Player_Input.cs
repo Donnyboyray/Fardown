@@ -4,105 +4,136 @@ using UnityEngine;
 
 public class Player_Input : MonoBehaviour
 {
-
-    public float speed;
-    public float runningSpeed;
-    private float backupSpeed = 3f;
-    public Transform player;
-    public bool isHiding;
-    public Vector3 hidingPlace;
-    private Vector3 playerHidingPlace;
-    public LayerMask whatIsHiding;
-    public GameObject hidingPlaceObj;
-
+    //SCRIPT REFS
     public GameManager gm; //Game manager in script
- 
+
+    //MOVEMENT VARIABLES
+    public float speed; //Walking
+    public float runningSpeed; //Running
+    private float backupSpeed = 3f; //backing up 
+
+    //HIDING VARIABLES
+    public bool isHiding; //Checks if player is hiding or not
+    private Vector3 hidingPlace; //Current position of hiding place
+    private Vector3 playerHidingPlace;
+    private Vector3 formerStandingPosition; //Position of player when interacting w/ hiding place
+
+    //RAYCAST
+    Ray ray; //Ray that follows camera
+    private float maxDistance = 3f; //Maximum limit of ray
+    public LayerMask interactableLayers; //Set to Hidable, Collectable
+
 
     // Start is called before the first frame update
     void Start()
     {
-        //gm = GetComponent<GameManager>();
-        hidingPlaceObj = null;
+        isHiding = false; //Set to false just in case
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Drawing Ray
+        ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
+        //Inspector view of ray
+        Debug.DrawRay(ray.origin, ray.direction * maxDistance, Color.cyan);
+
+        //Checks for isHiding to be false
+        //Movement is frozen if isHiding = true
         if (!isHiding)
         {
-
             //RUNNING
             if (Input.GetKey(KeyCode.W) && (Input.GetKey(KeyCode.LeftShift)))
             {
-                player.transform.Translate(Vector3.forward * Time.deltaTime * runningSpeed);
+                this.transform.Translate(Vector3.forward * Time.deltaTime * runningSpeed);
                 //Add timer so that player cannot run indefinitely
             }
-            //FORWARD
+            //FORWARDS
             else if (Input.GetKey(KeyCode.W))
             {
-                player.transform.Translate(Vector3.forward * Time.deltaTime * speed);
-
+                this.transform.Translate(Vector3.forward * Time.deltaTime * speed);
             }
             //BACKWARDS
             if (Input.GetKey(KeyCode.S))
             {
-                player.transform.Translate(Vector3.back * Time.deltaTime * backupSpeed);
+                this.transform.Translate(Vector3.back * Time.deltaTime * backupSpeed);
                 //Uses a dif, private speed to go slower. Cannot be changed in game
             }
         }
 
-            //LEFT
+        //Rotating is allowed in hiding mode
+         //LEFT
          if (Input.GetKey(KeyCode.A))
          {
-             player.transform.Rotate(new Vector3(0, -15f, 0) * Time.deltaTime * speed);
+             this.transform.Rotate(new Vector3(0, -15f, 0) * Time.deltaTime * speed);
          }
-            //RIGHT
+         //RIGHT
          if (Input.GetKey(KeyCode.D))
          {
-                player.transform.Rotate(new Vector3(0, 15f, 0) * Time.deltaTime * speed);
+                this.transform.Rotate(new Vector3(0, 15f, 0) * Time.deltaTime * speed);
          }
 
-        if (Physics.Raycast(hidingPlace, transform.forward, 2f, whatIsHiding))
+         //RAYCAST PHYSICS
+        if (Physics.Raycast(ray, out RaycastHit hit, maxDistance , interactableLayers))
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                //hidingPlaceObj
-                isHiding = !isHiding;
-                if (isHiding == true)
+                //Debug.Log("Interactable detected");
+
+                //COLLECTABLE ITEMS
+                if(hit.collider.CompareTag("PickUp"))
                 {
-                    Debug.Log("Player is Hiding");
-                    //playerHidingPlace = new Vector3(other.transform.position.x, player.transform.position.y, other.transform.position.z);
-                   // this.transform.position = playerHidingPlace;
+                    //Collects item
+                    gm.itemCount++;
+                    Destroy(hit.collider.gameObject);
+                    Debug.Log("Pickup interacted with");
+                }
+
+                //HIDING
+                if(isHiding == false) //would probably work w/o this
+                {
+                    if (hit.collider.CompareTag("Hidable"))
+                    {
+
+                        hidingPlace = new Vector3(hit.transform.position.x, hit.transform.position.y + 1.5f, hit.transform.position.z);
+                        formerStandingPosition = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+
+                        Hiding();
+
+                        Debug.Log("Hide interacted with");
+
+                    }
                 }
             }
         }
 
-
-
-    }
-
-    public void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.CompareTag("PickUp"))
+        //ESCAPE HIDING
+        if (isHiding == true)
         {
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKeyUp(KeyCode.LeftShift))
             {
-                //Collects item
-                gm.itemCount++;
-                // Destroy(other.gameObject);
-                other.gameObject.SetActive(false);
+                Hiding();
+                Debug.Log("Escaped Hiding");
             }
         }
 
-        if (other.gameObject.CompareTag("Hidable"))
-        {
-            // Debug.Log("Can Hide");
-
-        }
     }
 
-    public void OnCollisionStay(Collision other)
+    //HIDE FUNCTION
+    void Hiding()
     {
+        isHiding = !isHiding;
+
+        if(isHiding == true)
+        {
+            this.transform.position = hidingPlace;
+        }
+        else
+        {
+            this.transform.position = formerStandingPosition;
+        }
 
     }
+
 }
+

@@ -9,12 +9,10 @@ public class Enemy_AI : MonoBehaviour
 
     public Transform player;
 
-    public LayerMask whatIsGround, whatIsPlayer;
-
-    public float setY;
+    public LayerMask whatIsGround, whatIsPlayer, whatAreWalls;
 
     //Patrol Mode
-    public Vector3 walkPoint; //set point
+    private Vector3 walkPoint; //set point
     bool walkPointSet; //check if point is set
     public float walkPointRange; //keep track of distance till point
 
@@ -22,8 +20,8 @@ public class Enemy_AI : MonoBehaviour
     public float timeBetweenAttacks;
     bool alreadyAttacked;
 
-    public float sightRange, attackRange;
-    public bool playerInSightRange, playerInAttackRange;
+    public float sightRange, sightAngle, attackRange, autoWalkPointReset;
+    private bool playerInSightRange, playerInAttackRange, isWall, wallBlocks;
 
     public Player_Input playerInput;
 
@@ -38,10 +36,10 @@ public class Enemy_AI : MonoBehaviour
 
     void Update()
     {
+        //OnDrawGizmosSelected();
         //Check for sight and attack range
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer); //Change to dif raycast
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
-
 
         if (playerInput.isHiding == false)
         {
@@ -63,13 +61,16 @@ public class Enemy_AI : MonoBehaviour
         }
         else
         {
+            //Debug.Log("Lost Sight of Player");
             Patroling();
         }
     }
 
     public void Patroling()
     {
-        if (!walkPointSet)
+        autoWalkPointReset--;
+        //Make it so new walk point is set if current one is not met after a few seconds to prevent enemy from just freezing
+        if (!walkPointSet || autoWalkPointReset <= 0)
         {
            SearchWalkPoint();
         }
@@ -90,10 +91,13 @@ public class Enemy_AI : MonoBehaviour
     private void SearchWalkPoint()
     {
 
+        autoWalkPointReset = 1000f;
+
         float randomZ = Random.Range(-walkPointRange, walkPointRange);
         float randomX = Random.Range(-walkPointRange, walkPointRange);
 
         walkPoint = new Vector3(transform.position.x + randomX, transform.position.y , transform.position.z + randomZ);
+
 
         if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
         {
@@ -104,7 +108,14 @@ public class Enemy_AI : MonoBehaviour
 
     private void ChasePlayer()
     {
-        agent.SetDestination(player.position);
+        if(isWall == false)
+        {
+            agent.SetDestination(player.position);
+        }
+        else
+        {
+            Patroling();
+        }
     }
 
     private void AttackPlayer()
@@ -127,5 +138,13 @@ public class Enemy_AI : MonoBehaviour
     private void ResetAttack()
     {
         alreadyAttacked = false;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, sightRange);
     }
 }
