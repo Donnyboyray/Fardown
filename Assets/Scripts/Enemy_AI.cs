@@ -1,7 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.AI;
+using static UnityEngine.Random;
+using static UnityEngine.Debug;
+using System.Security.Cryptography;
 
 public class Enemy_AI : MonoBehaviour
 {
@@ -17,11 +22,14 @@ public class Enemy_AI : MonoBehaviour
     public float walkPointRange; //keep track of distance till point
 
     //Attack Mode
-    public float timeBetweenAttacks;
-    bool alreadyAttacked;
+    public float timeBetweenAttacks, timeEscapeReset;
+    bool alreadyAttacked, currentlyAttacking;
 
-    public float sightRange, sightAngle, attackRange, autoWalkPointReset;
-    private bool playerInSightRange, playerInAttackRange, isWall, wallBlocks;
+    public float sightRange, attackRange, autoWalkPointReset;
+    private bool playerInSightRange, playerInAttackRange;
+
+    private float timeGuess;
+    private Vector3 guessLocation;
 
     public Player_Input playerInput;
 
@@ -32,6 +40,7 @@ public class Enemy_AI : MonoBehaviour
         player = GameObject.Find("Player").transform;
         playerInput = GameObject.Find("Player").GetComponent<Player_Input>();
         agent = GetComponent<NavMeshAgent>();
+        timeGuess = 500f;
     }
 
     void Update()
@@ -51,12 +60,18 @@ public class Enemy_AI : MonoBehaviour
 
             if (playerInSightRange && !playerInAttackRange)
             {
-                ChasePlayer();
+                timeGuess--;
+                Log(timeGuess);
+
+                if(timeGuess <= 0)
+                {
+                    LocatePlayer();
+                }
             }
 
             if (playerInAttackRange && playerInSightRange)
             {
-                AttackPlayer();
+                ChasePlayer();
             }
         }
         else
@@ -93,8 +108,8 @@ public class Enemy_AI : MonoBehaviour
 
         autoWalkPointReset = 1000f;
 
-        float randomZ = Random.Range(-walkPointRange, walkPointRange);
-        float randomX = Random.Range(-walkPointRange, walkPointRange);
+        float randomZ = Range(-walkPointRange, walkPointRange);
+        float randomX = Range(-walkPointRange, walkPointRange);
 
         walkPoint = new Vector3(transform.position.x + randomX, transform.position.y , transform.position.z + randomZ);
 
@@ -106,29 +121,32 @@ public class Enemy_AI : MonoBehaviour
 
     }
 
+    private void LocatePlayer()
+    {
+        Log("Is chasing.");
+        var position = new Vector3(player.position.x + Range(-5f, 5f), player.position.y, player.position.z + Range(-5f, 5f));
+        agent.SetDestination(position);
+        timeGuess = Range(100f, 500f);
+
+    }
+
     private void ChasePlayer()
     {
-        if(isWall == false)
+        if (currentlyAttacking == false)
         {
             agent.SetDestination(player.position);
-        }
-        else
-        {
-            Patroling();
+            //transform.LookAt(player);
         }
     }
 
     private void AttackPlayer()
     {
-
         agent.SetDestination(transform.position);
-
-        transform.LookAt(player);
 
         if (!alreadyAttacked)
         {
             //add specific attack code here
-            Debug.Log("Attacked");
+            Log("Attacked");
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
@@ -138,6 +156,17 @@ public class Enemy_AI : MonoBehaviour
     private void ResetAttack()
     {
         alreadyAttacked = false;
+        currentlyAttacking = false;
+    }
+
+   private void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            Log("Collided");
+            currentlyAttacking = true;
+            AttackPlayer();
+        }
     }
 
     private void OnDrawGizmos()
