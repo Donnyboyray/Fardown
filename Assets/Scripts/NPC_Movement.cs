@@ -22,6 +22,7 @@ public class NPC_Movement : MonoBehaviour
         //wallTimer = 10f;
         decidedAction = 1;
         Debug.Log(decidedAction);
+        target = GameObject.Find("Player").transform;
     }
 
     public void OnTriggerEnter(Collider other)

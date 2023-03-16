@@ -8,11 +8,12 @@ using static UnityEngine.Random;
 using static UnityEngine.Debug;
 using System.Security.Cryptography;
 
-public class Enemy_AI : MonoBehaviour
+public class Catue_AI : MonoBehaviour
 {
     public NavMeshAgent agent;
 
     public Transform player;
+    public Rigidbody rbPlayer;
 
     public LayerMask whatIsGround, whatIsPlayer, whatAreWalls;
 
@@ -23,7 +24,7 @@ public class Enemy_AI : MonoBehaviour
 
     //Attack Mode
     public float timeBetweenAttacks, timeEscapeReset;
-    bool alreadyAttacked, currentlyAttacking;
+    bool alreadyAttacked;
 
     public float sightRange, attackRange, autoWalkPointReset;
     private bool playerInSightRange, playerInAttackRange;
@@ -31,16 +32,18 @@ public class Enemy_AI : MonoBehaviour
     private float timeGuess;
     private Vector3 guessLocation;
 
-    public Player_Input playerInput;
+    public GameManager gm;
 
     //public Hiding_Behavior hidingB;
 
     void Awake()
     {
         player = GameObject.Find("Player").transform;
-        playerInput = GameObject.Find("Player").GetComponent<Player_Input>();
+        rbPlayer = GameObject.Find("Player").GetComponent<Rigidbody>();
+        gm = GameObject.Find("Game Manager").GetComponent<GameManager>();
         agent = GetComponent<NavMeshAgent>();
         timeGuess = 500f;
+        alreadyAttacked = false;
     }
 
     void Update()
@@ -50,7 +53,7 @@ public class Enemy_AI : MonoBehaviour
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer); //Change to dif raycast
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-        if (playerInput.isHiding == false)
+        if (gm.isHiding == false)
         {
 
             if (!playerInSightRange && !playerInAttackRange)
@@ -61,7 +64,7 @@ public class Enemy_AI : MonoBehaviour
             if (playerInSightRange && !playerInAttackRange)
             {
                 timeGuess--;
-                Log(timeGuess);
+                //Log(timeGuess);
 
                 if(timeGuess <= 0)
                 {
@@ -123,8 +126,8 @@ public class Enemy_AI : MonoBehaviour
 
     private void LocatePlayer()
     {
-        Log("Is chasing.");
-        var position = new Vector3(player.position.x + Range(-5f, 5f), player.position.y, player.position.z + Range(-5f, 5f));
+        //Log("Is chasing.");
+        var position = new Vector3(player.position.x + Range(-15f, 15f), player.position.y, player.position.z + Range(-15f, 15f));
         agent.SetDestination(position);
         timeGuess = Range(100f, 500f);
 
@@ -132,48 +135,55 @@ public class Enemy_AI : MonoBehaviour
 
     private void ChasePlayer()
     {
-        if (currentlyAttacking == false)
+       agent.speed = 5f;
+       agent.SetDestination(player.position);
+       float dist = Vector3.Distance(player.position, transform.position);
+
+        if (dist <= 2f)
         {
-            agent.SetDestination(player.position);
-            //transform.LookAt(player);
+            agent.SetDestination(transform.position);
+
+
+            if(alreadyAttacked == false)
+            {
+                AttackPlayer();
+            }
         }
+
     }
 
     private void AttackPlayer()
     {
-        agent.SetDestination(transform.position);
 
-        if (!alreadyAttacked)
-        {
-            //add specific attack code here
+ 
+            gm.playerHealth--;
             Log("Attacked");
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
-        }
+        
 
     }
 
     private void ResetAttack()
     {
         alreadyAttacked = false;
-        currentlyAttacking = false;
     }
 
-   private void OnCollisionEnter(Collision other)
+    /*private void OnCollisionEnter(Collision other)
     {
-        if(other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
+            agent.SetDestination(transform.position);
             Log("Collided");
-            currentlyAttacking = true;
             AttackPlayer();
         }
-    }
+    }*/
 
-    private void OnDrawGizmos()
+   /*private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
-    }
+    }*/
 }
