@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Catue_Area.unity
     guid: ec3c3960bd7a7844880f2a74751fb40b
+  - enabled: 1
+    path: Assets/Scenes/Alien_Area.unity
+    guid: 8130a22c8a6a5314a8399ad3145ff86f
   m_configObjects: {}

@@ -21,7 +21,7 @@ public class Hiding_Behavior : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             gm.isHiding = true;
-            Log("Hiding is" + gm.isHiding);
+            //Log("Hiding is" + gm.isHiding);
         }
     }
 
