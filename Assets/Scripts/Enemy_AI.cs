@@ -8,7 +8,7 @@ using static UnityEngine.Random;
 using static UnityEngine.Debug;
 using System.Security.Cryptography;
 
-public class Catue_AI : MonoBehaviour
+public class Enemy_AI : MonoBehaviour
 {
     public NavMeshAgent agent;
 
@@ -23,7 +23,7 @@ public class Catue_AI : MonoBehaviour
     public float walkPointRange; //keep track of distance till point
 
     //Attack Mode
-    public float timeBetweenAttacks, timeEscapeReset;
+    public float timeBetweenAttacks;
     bool alreadyAttacked;
 
     public float sightRange, attackRange, autoWalkPointReset;
