@@ -23,13 +23,13 @@ public class Catue_AI : MonoBehaviour
     public float walkPointRange; //keep track of distance till point
 
     //Attack Mode
-    public float timeBetweenAttacks, timeEscapeReset;
+    public float timeBetweenAttacks;
     bool alreadyAttacked;
 
     public float sightRange, attackRange, autoWalkPointReset;
     private bool playerInSightRange, playerInAttackRange;
 
-    private float timeGuess;
+    public float timeGuess, timeAttract;
     private Vector3 guessLocation;
 
     public GameManager gm;
@@ -43,6 +43,7 @@ public class Catue_AI : MonoBehaviour
         gm = GameObject.Find("Game Manager").GetComponent<GameManager>();
         agent = GetComponent<NavMeshAgent>();
         timeGuess = 500f;
+        timeAttract = 100f;
         alreadyAttacked = false;
     }
 
@@ -53,39 +54,65 @@ public class Catue_AI : MonoBehaviour
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer); //Change to dif raycast
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-        if (gm.isHiding == false)
+        if (gm.isAttracting == false)
         {
-
             if (!playerInSightRange && !playerInAttackRange)
             {
                 Patroling();
             }
-
-            if (playerInSightRange && !playerInAttackRange)
+            if (gm.isHiding == false)
             {
-                timeGuess--;
-                //Log(timeGuess);
-
-                if(timeGuess <= 0)
+                if (playerInSightRange && !playerInAttackRange)
                 {
-                    LocatePlayer();
+                    timeGuess--;
+                    //Log(timeGuess);
+
+                    if (timeGuess <= 0)
+                    {
+                        LocatePlayer();
+                    }
+                }
+
+                if (playerInAttackRange && playerInSightRange)
+                {
+                    ChasePlayer();
                 }
             }
-
-            if (playerInAttackRange && playerInSightRange)
+            else
             {
-                ChasePlayer();
+                //Debug.Log("Lost Sight of Player");
+                Patroling();
             }
         }
         else
         {
-            //Debug.Log("Lost Sight of Player");
-            Patroling();
+            timeAttract--;
+
+            if(gm.isHiding == false)
+            {
+                if (timeAttract >= 0)
+                {
+                    ChasePlayer();
+                }
+                else if (timeAttract < 0)
+                {
+                    timeAttract = 100f;
+                    Invoke(nameof(Patroling), 2f);
+
+                }
+
+            }
+            /*else
+            {
+                Patroling();
+            }*/
+
         }
     }
 
     public void Patroling()
     {
+        gm.isAttracting = false;
         autoWalkPointReset--;
         //Make it so new walk point is set if current one is not met after a few seconds to prevent enemy from just freezing
         if (!walkPointSet || autoWalkPointReset <= 0)
@@ -179,11 +206,11 @@ public class Catue_AI : MonoBehaviour
         }
     }*/
 
-   /*private void OnDrawGizmos()
+   private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
-    }*/
+    }
 }

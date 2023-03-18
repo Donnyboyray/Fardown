@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     //Holds inventory 
     //Currently it's going to be a number system
     public float itemCount, playerHealth;
-    public bool isHiding, isStill;
+    public bool isHiding, isStill, isAttracting;
 
 
     private void Awake()
