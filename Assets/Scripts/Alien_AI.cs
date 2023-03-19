@@ -29,6 +29,7 @@ public class Alien_AI : MonoBehaviour
 
     //private float timeGuess;
     private Vector3 guessLocation;
+    private float tpTimer;
 
     public GameManager gm;
 
@@ -41,6 +42,7 @@ public class Alien_AI : MonoBehaviour
         gm = GameObject.Find("Game Manager").GetComponent<GameManager>();
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         //timeGuess = 1000f;
+        tpTimer = 500f;
         alreadyAttacked = false;
         agent.speed = 20f;
     }
@@ -52,33 +54,28 @@ public class Alien_AI : MonoBehaviour
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
 
-         if (gm.isHiding == false)
-         {
+
                 if (!playerInSightRange && !playerInAttackRange)
                 {
-                    if(gm.isStill == false)
-                    {
+                    
                     Patroling();
                     agent.speed = 7f;
-                }
-                    else
-                    {
-                    Patroling();
-                    agent.speed = 0.5f;
-                    }
+                   
                 }
 
+         if (gm.isHiding == false)
+         {
                 if (playerInSightRange && !playerInAttackRange)
                 {
+                    tpTimer--;
                      if (gm.isStill == false)
                     {
                     ChasePlayer();
                     agent.speed = 9f;
-                }
+                    }
                     else
                     {
-                    ChasePlayer();
-                    agent.speed = 0.5f;
+                    agent.SetDestination(transform.position); ;
                     }
                 }
 
@@ -86,12 +83,20 @@ public class Alien_AI : MonoBehaviour
                 {
                     AttackPlayer();
                 }
-            }
+         }
             else
             {
                 Patroling();
                 agent.speed = 7f;
             }
+
+         if(tpTimer <= 0)
+         {
+            float randomZ = Range(-6f, -3f);
+            float randomX = Range(-6f, -3f);
+            this.transform.position = new Vector3(player.position.x - randomX, player.position.y, player.position.z - randomZ);
+            tpTimer = 500f;
+          }
     }
 
     public void Patroling()

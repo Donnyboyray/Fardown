@@ -10,11 +10,22 @@ public class GameManager : MonoBehaviour
     //Currently it's going to be a number system
     public float itemCount, playerHealth;
     public bool isHiding, isStill, isAttracting;
+    public Vector3 newScenePosition;
+    private static GameManager gmInstance;
 
 
     private void Awake()
     {
-        //DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(this);
+
+        if (gmInstance == null)
+        {
+            gmInstance = this;
+        }
+        else
+        {
+            Object.Destroy(this.gameObject);
+        }
     }
 
     private void Update()

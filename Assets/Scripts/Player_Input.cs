@@ -7,7 +7,7 @@ public class Player_Input : MonoBehaviour
 {
     //SCRIPT REFS
     public GameManager gm; //Game manager in script
-    public Scene_Change sc;
+    //public Scene_Change sc;
 
     //MOVEMENT VARIABLES
     public float speed; //Walking
@@ -20,12 +20,15 @@ public class Player_Input : MonoBehaviour
     private float maxDistance = 3f; //Maximum limit of ray
     public LayerMask interactableLayers; //Set to Hidable, Collectable
 
+    //public Vector3 spawnPosition;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        //this.transform = sc.playerSpawnPosition;
-        gm = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        gm = GameObject.FindGameObjectWithTag("gm").GetComponent<GameManager>();
+        this.transform.position = gm.newScenePosition;
+        Log(this.transform.position);
         gm.isHiding = false; //Set to false just in case
         gm.isStill = false;
         runningTimer = 500f;
@@ -159,7 +162,6 @@ public class Player_Input : MonoBehaviour
         {
             speed = 2f;
             runningSpeed = 3f;
-            Log("Wall");
 
         }
     }

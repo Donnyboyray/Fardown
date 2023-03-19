@@ -9,6 +9,7 @@ TagManager:
   - Wall
   - Hidable
   - Attractable
+  - gm
   layers:
   - Default
   - TransparentFX

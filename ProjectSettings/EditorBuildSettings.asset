@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Alien_Area.unity
     guid: 8130a22c8a6a5314a8399ad3145ff86f
+  - enabled: 1
+    path: Assets/Scenes/Safe_Area_1.unity
+    guid: b6f4aa29afd61fe499f0f5b2c2177f08
   m_configObjects: {}
