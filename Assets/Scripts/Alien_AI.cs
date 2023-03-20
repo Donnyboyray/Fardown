@@ -29,7 +29,7 @@ public class Alien_AI : MonoBehaviour
 
     //private float timeGuess;
     private Vector3 guessLocation;
-    private float tpTimer;
+    public float tpTimer;
 
     public GameManager gm;
 
@@ -42,9 +42,10 @@ public class Alien_AI : MonoBehaviour
         gm = GameObject.Find("Game Manager").GetComponent<GameManager>();
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         //timeGuess = 1000f;
-        tpTimer = 500f;
+        //tpTimer = 500f;
         alreadyAttacked = false;
         agent.speed = 20f;
+        //backUp = new Vector3(transform.position.x - 0.05f, transform.position.y, transform.position.z - 0.05f);
     }
 
     // Update is called once per frame
@@ -55,48 +56,50 @@ public class Alien_AI : MonoBehaviour
 
 
 
-                if (!playerInSightRange && !playerInAttackRange)
-                {
-                    
-                    Patroling();
-                    agent.speed = 7f;
-                   
-                }
+        if (!playerInSightRange && !playerInAttackRange)
+        {
 
-         if (gm.isHiding == false)
-         {
-                if (playerInSightRange && !playerInAttackRange)
-                {
-                    tpTimer--;
-                     if (gm.isStill == false)
-                    {
-                    ChasePlayer();
-                    agent.speed = 9f;
-                    }
-                    else
-                    {
-                    agent.SetDestination(transform.position); ;
-                    }
-                }
+            Patroling();
+            agent.speed = 7f;
 
-                if (playerInAttackRange && playerInSightRange)
-                {
-                    AttackPlayer();
-                }
-         }
-            else
+        }
+
+        if (gm.isHiding == false)
+        {
+            if (playerInSightRange && !playerInAttackRange)
             {
-                Patroling();
-                agent.speed = 7f;
+
+                if (gm.isStill == false)
+                {
+                    ChasePlayer();
+                    agent.speed = 7f;
+                    tpTimer--;
+                }
+                else
+                {   
+                    agent.SetDestination(transform.position);
+                }
+
             }
 
-         if(tpTimer <= 0)
-         {
+            if (playerInAttackRange && playerInSightRange)
+            {
+                AttackPlayer();
+            }
+        }
+        else
+        {
+            Patroling();
+            agent.speed = 7f;
+        }
+
+        if (tpTimer <= 0)
+        {
             float randomZ = Range(-6f, -3f);
             float randomX = Range(-6f, -3f);
             this.transform.position = new Vector3(player.position.x - randomX, player.position.y, player.position.z - randomZ);
-            tpTimer = 500f;
-          }
+            tpTimer = 1000f;
+        }
     }
 
     public void Patroling()
@@ -152,7 +155,7 @@ public class Alien_AI : MonoBehaviour
     private void AttackPlayer()
     {
 
-       // agent.SetDestination(transform.position);
+        // agent.SetDestination(transform.position);
 
 
         if (alreadyAttacked == false)
@@ -175,12 +178,12 @@ public class Alien_AI : MonoBehaviour
         agent.speed = 20f;
     }
 
-    /*private void OnDrawGizmos()
+    private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
-    }*/
+    }
 
 }

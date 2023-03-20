@@ -27,6 +27,8 @@ public class Scene_Change : MonoBehaviour
             //pi = other.gameObject.GetComponent<Player_Input>();
             SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
             //playerSpawnPosition = new Vector3(other.position.x + 2f, other.position.y, other.position.z + 2f);
+     
+        
         }
     }
 }

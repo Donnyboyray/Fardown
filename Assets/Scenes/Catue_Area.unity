@@ -183,6 +183,10 @@ PrefabInstance:
       value: Fardown
       objectReference: {fileID: 0}
     - target: {fileID: 5880796360312500901, guid: 50418ba0b681ff74fb89151435eae5d5, type: 3}
+      propertyPath: sceneNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5880796360312500901, guid: 50418ba0b681ff74fb89151435eae5d5, type: 3}
       propertyPath: thisScenePosition.x
       value: 66.56
       objectReference: {fileID: 0}
@@ -657,6 +661,10 @@ PrefabInstance:
     - target: {fileID: 5880796360312500901, guid: 50418ba0b681ff74fb89151435eae5d5, type: 3}
       propertyPath: sceneName
       value: Alien_Area
+      objectReference: {fileID: 0}
+    - target: {fileID: 5880796360312500901, guid: 50418ba0b681ff74fb89151435eae5d5, type: 3}
+      propertyPath: sceneNumber
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5880796360312500901, guid: 50418ba0b681ff74fb89151435eae5d5, type: 3}
       propertyPath: thisScenePosition.x
@@ -3861,6 +3869,8 @@ MonoBehaviour:
   isHiding: 0
   isStill: 0
   isAttracting: 0
+  isAlienScene: 0
+  isLooking: 0
   newScenePosition: {x: 46.88, y: 1, z: 7.08}
 --- !u!4 &1723987830
 Transform:

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using static UnityEngine.Debug;
 
@@ -8,6 +9,7 @@ public class Player_Input : MonoBehaviour
     //SCRIPT REFS
     public GameManager gm; //Game manager in script
     //public Scene_Change sc;
+    public Alien_AI aai;
 
     //MOVEMENT VARIABLES
     public float speed; //Walking
@@ -17,11 +19,9 @@ public class Player_Input : MonoBehaviour
 
     //RAYCAST
     Ray ray; //Ray that follows camera
-    private float maxDistance = 3f; //Maximum limit of ray
+    private float maxDistance = 5f; //Maximum limit of ray
+    //private float maxView = 10f; //Max limit of ray just for Alien AI
     public LayerMask interactableLayers; //Set to Hidable, Collectable
-
-    //public Vector3 spawnPosition;
-
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +41,7 @@ public class Player_Input : MonoBehaviour
         //Drawing Ray
         ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, -0.5f));
         //Inspector view of ray
-        Debug.DrawRay(ray.origin, ray.direction * maxDistance, Color.cyan);
+        DrawRay(ray.origin, ray.direction * maxDistance, Color.cyan);
 
         //Checks for isHiding to be false
         //Movement is frozen if isHiding = true
@@ -92,14 +92,11 @@ public class Player_Input : MonoBehaviour
               this.transform.Translate(Vector3.back * Time.deltaTime * backupSpeed);
             //Uses a dif, private speed to go slower. Cannot be changed in game
               gm.isStill = false;
+            //Log(gm.isStill);
 
         }
-        else
-        {
-          gm.isStill = true;
-        }
-
-        if (Input.GetKey(KeyCode.W))
+       
+        else if (Input.GetKey(KeyCode.W))
         {
             this.transform.Translate(Vector3.forward * Time.deltaTime * speed);
             //Log("Is Still");
@@ -139,8 +136,9 @@ public class Player_Input : MonoBehaviour
                     //Collects item
                     gm.itemCount++;
                     Destroy(hit.collider.gameObject);
-                    Debug.Log("Pickup interacted with");
+                    Log("Pickup interacted with");
                 }
+           
             }
         }
 
@@ -154,6 +152,8 @@ public class Player_Input : MonoBehaviour
         }
 
     }*/
+
+
 
 
     private void OnCollisionStay(Collision other)

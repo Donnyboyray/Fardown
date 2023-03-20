@@ -10,6 +10,7 @@ TagManager:
   - Hidable
   - Attractable
   - gm
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Collectable
   - whatAreWalls
   - Attractable
-  - 
+  - NPC
   - 
   - 
   - 
