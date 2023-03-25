@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Fardown.unity
+    path: Assets/Scenes/Main_Area.unity
     guid: e47b54671712abe42bb8173decf2dade
   - enabled: 1
     path: Assets/Scenes/Catue_Area.unity
@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Safe_Area_1.unity
     guid: b6f4aa29afd61fe499f0f5b2c2177f08
+  - enabled: 1
+    path: Assets/Scenes/Safe_Area_2.unity
+    guid: 22b3ca7f7bf2a0f41ac6d0f9864d805a
+  - enabled: 1
+    path: Assets/Scenes/Storage_Area.unity
+    guid: fd473d63d900a084db0eb2571b679025
   m_configObjects: {}

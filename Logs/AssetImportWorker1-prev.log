@@ -15,7 +15,7 @@ C:/Users/Owner/Documents/Fardown
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-63158
+52894
 Successfully changed project path to: C:/Users/Owner/Documents/Fardown
 C:/Users/Owner/Documents/Fardown
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/Owner/Documents/Fardown
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [3380] Host "[IP] 192.168.1.68 [Port] 0 [Flags] 2 [Guid] 1487670195 [EditorId] 1487670195 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-U7VC2L5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [14960] Host "[IP] 192.168.1.68 [Port] 0 [Flags] 2 [Guid] 2125315627 [EditorId] 2125315627 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-U7VC2L5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [3380] Host "[IP] 192.168.1.68 [Port] 0 [Flags] 2 [Guid] 1487670195 [EditorId] 1487670195 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-U7VC2L5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [14960] Host "[IP] 192.168.1.68 [Port] 0 [Flags] 2 [Guid] 2125315627 [EditorId] 2125315627 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-U7VC2L5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 216.81 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 106.15 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.20f1 (577897200b8b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Resources/UnitySubsystems
@@ -67,47 +67,1048 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56912
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56424
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.197101 seconds.
+Registered in 0.009193 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 102.43 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 113.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  5.972 seconds
+- Completed reload, in  0.808 seconds
 Domain Reload Profiling:
-	ReloadAssembly (5973ms)
-		BeginReloadAssembly (4276ms)
+	ReloadAssembly (808ms)
+		BeginReloadAssembly (101ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (1128ms)
-			LoadAssemblies (4278ms)
+		EndReloadAssembly (591ms)
+			LoadAssemblies (98ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (683ms)
+			SetupTypeCache (145ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (346ms)
+			SetupLoadedEditorAssemblies (353ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
+				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (103ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (168ms)
-				ProcessInitializeOnLoadMethodAttributes (61ms)
+				RefreshPlugins (114ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (171ms)
+				ProcessInitializeOnLoadMethodAttributes (55ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006786 seconds.
+Registered in 0.005616 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Owner\Documents\Fardown\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Owner\Documents\Fardown\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.185 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1186ms)
+		BeginReloadAssembly (147ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (899ms)
+			LoadAssemblies (115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (302ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (403ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (100ms)
+				ProcessInitializeOnLoadAttributes (262ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3196 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (84.2 KB). Loaded Objects now: 3657.
+Memory consumption went from 116.4 MB to 116.4 MB.
+Total: 5.227100 ms (FindLiveObjects: 0.309700 ms CreateObjectMapping: 0.132400 ms MarkObjects: 4.681600 ms  DeleteObjects: 0.102400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 97496.107184 seconds.
+  path: Assets/PolygonPrototype/Models/SM_Veh_Car_Sports_01.fbx
+  artifactKey: Guid(773fa55be186bfc46910c191c5c57d8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Models/SM_Veh_Car_Sports_01.fbx using Guid(773fa55be186bfc46910c191c5c57d8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0000b81008db682143b38b77bd3bb67b') in 0.435646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/PolygonPrototype/Models/SM_Switch_Lever_01.fbx
+  artifactKey: Guid(ed8aef541c4d91c46b4bba37be9ab928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Models/SM_Switch_Lever_01.fbx using Guid(ed8aef541c4d91c46b4bba37be9ab928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd3c46e3a02d71aa5c01cca237035171') in 0.035381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/PolygonPrototype/Models/SM_Switch_Button_02.fbx
+  artifactKey: Guid(3393ead1ace77c446869d40fd6e504b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Models/SM_Switch_Button_02.fbx using Guid(3393ead1ace77c446869d40fd6e504b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3839729c15940b9ee8783e3be11deee') in 0.031848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1572.385019 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Door.prefab
+  artifactKey: Guid(a32e9995f50889947b8e7a3d65fd3560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Door.prefab using Guid(a32e9995f50889947b8e7a3d65fd3560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b3ead82fd4782186a1a0e8824641a37') in 0.022129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Door_02.prefab
+  artifactKey: Guid(38779c9653e8f684cab84123989672e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Door_02.prefab using Guid(38779c9653e8f684cab84123989672e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '597b612be7af9e429400bab1057b9204') in 0.019884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Floor_Carpet_Blue 1.prefab
+  artifactKey: Guid(4f8cfa89dcd05b541aaf2a8c9371939c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Floor_Carpet_Blue 1.prefab using Guid(4f8cfa89dcd05b541aaf2a8c9371939c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f764937a6be778170dedda362ee1a33d') in 0.018679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Bar_Bench.prefab
+  artifactKey: Guid(fd5f8faa00480a444bf47f5d10076a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Bar_Bench.prefab using Guid(fd5f8faa00480a444bf47f5d10076a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70d2089b994547a2f46352080c41eece') in 0.016147 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Bar_Stool.prefab
+  artifactKey: Guid(0fa00c3c197accb43acda76891213afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Bar_Stool.prefab using Guid(0fa00c3c197accb43acda76891213afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fd37e3f4b0ad5b54fb588f6875c8143') in 0.016193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_BathMat_Red.prefab
+  artifactKey: Guid(e23b3f6698d0faf46be7802581086357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_BathMat_Red.prefab using Guid(e23b3f6698d0faf46be7802581086357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d2af70e780741a568806ee1963b63c6') in 0.014595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Floor_Vinyl.prefab
+  artifactKey: Guid(49f913411ec2b0a439b50217c240850e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Floor_Vinyl.prefab using Guid(49f913411ec2b0a439b50217c240850e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cb19f2af54398bc60e95959e4a396f9') in 0.015966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Big_Chair_02.prefab
+  artifactKey: Guid(8b07fe22c88a2114092f0296ecf7b3cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Big_Chair_02.prefab using Guid(8b07fe22c88a2114092f0296ecf7b3cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cadc7a268ec8c0a7d88ce6a719d1d7e9') in 0.015725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Floor_Wood.prefab
+  artifactKey: Guid(aa649362b365a3f4eb283c3cd3c4da91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Floor_Wood.prefab using Guid(aa649362b365a3f4eb283c3cd3c4da91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a47ce6e74ac9d70db40bb737851db0ca') in 0.016469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_BathroomCabinet_Brown.prefab
+  artifactKey: Guid(bae6065199ad43d42a7006e115807a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_BathroomCabinet_Brown.prefab using Guid(bae6065199ad43d42a7006e115807a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52ee5d41fb4cde6caab5beddd8b3cce0') in 0.017445 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_BathMat_Blue.prefab
+  artifactKey: Guid(01f76d3b6fc373f489f1ffc8ec9cb690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_BathMat_Blue.prefab using Guid(01f76d3b6fc373f489f1ffc8ec9cb690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e908d8a03d336b07850d0f163f937146') in 0.014836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.478446 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Big_Clock.prefab
+  artifactKey: Guid(01aabf04aa6a82741b8b0e2492e943ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Big_Clock.prefab using Guid(01aabf04aa6a82741b8b0e2492e943ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e54bad6a7d02b7befe8cb49260720313') in 0.024144 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Bonzai.prefab
+  artifactKey: Guid(2f6a4102ddb37564095f88bc10febb3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Bonzai.prefab using Guid(2f6a4102ddb37564095f88bc10febb3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e854f6d5ed9ce64ac7c4e1851f0b0837') in 0.018166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_BunkBed_Pink.prefab
+  artifactKey: Guid(2f2757609ec32ae40b2ae8ebbfd8a4d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_BunkBed_Pink.prefab using Guid(2f2757609ec32ae40b2ae8ebbfd8a4d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e000472066a7f6f92f4d0df54257db4') in 0.018371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Chair_04.prefab
+  artifactKey: Guid(27bfb35903d157d44a997df93834bac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Chair_04.prefab using Guid(27bfb35903d157d44a997df93834bac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e7278840f621fa499ca8f0dd0a04933') in 0.017564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Chair_01.prefab
+  artifactKey: Guid(cdd7dee5e9a7a8f4e94e511f30ce5058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Chair_01.prefab using Guid(cdd7dee5e9a7a8f4e94e511f30ce5058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bad977dc071d09240e8d2555d9365e6') in 0.016326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Bunny_Ear.prefab
+  artifactKey: Guid(75a2706c0babc5f4c9519170805a0323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Bunny_Ear.prefab using Guid(75a2706c0babc5f4c9519170805a0323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dad867b39ff3a480b6d0442422396c58') in 0.014971 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Candle_01.prefab
+  artifactKey: Guid(8c283e87c3adcf74db5e0886c7065a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Candle_01.prefab using Guid(8c283e87c3adcf74db5e0886c7065a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8add9f1c0d07911cc355ab68d319b2e') in 0.016129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Candle_02.prefab
+  artifactKey: Guid(7e4d65255520b7e4383672317287ba25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Candle_02.prefab using Guid(7e4d65255520b7e4383672317287ba25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27cd4cd566d0a3b0bbcc090448bfd76d') in 0.013956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.492455 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Chair_06.prefab
+  artifactKey: Guid(fd8167bc3b1235c4ca1d6eb6f018474d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Chair_06.prefab using Guid(fd8167bc3b1235c4ca1d6eb6f018474d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b6ec3e3ca016b143ef8c5b614d04b82') in 0.017274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Computer_Case.prefab
+  artifactKey: Guid(1f5102f22d8a3a446bcd0012ed51b456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Computer_Case.prefab using Guid(1f5102f22d8a3a446bcd0012ed51b456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e47f8e24c6349b1ec1bf4bf8c1bc91ed') in 0.018853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Chest_01.prefab
+  artifactKey: Guid(39fd47ca14c46c640bd845c416266814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Chest_01.prefab using Guid(39fd47ca14c46c640bd845c416266814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42294d08794eff363f09b2cb88cc77bd') in 0.018818 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Couch_01.prefab
+  artifactKey: Guid(bfdb6623e4d583a4db78a56058d28f58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Couch_01.prefab using Guid(bfdb6623e4d583a4db78a56058d28f58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1d752aca06ca7a89a9f4cef8b385b97') in 0.018790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Chair_08.prefab
+  artifactKey: Guid(81fa3ecafc447594e9bf95bba0f662dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Chair_08.prefab using Guid(81fa3ecafc447594e9bf95bba0f662dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f5a2a7ec45f3edb8cdc087c2ec1bdbd') in 0.016977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Chair_09.prefab
+  artifactKey: Guid(27b6fd6879866b541b50533a039e8c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Chair_09.prefab using Guid(27b6fd6879866b541b50533a039e8c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49886a5203f40eb3612b9d799067ba5f') in 0.018334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Computer_Mouse.prefab
+  artifactKey: Guid(e9d6cad7aca36f342af66d00cc7066e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Computer_Mouse.prefab using Guid(e9d6cad7aca36f342af66d00cc7066e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa26fec8fd92e477b9deddad8f328670') in 0.015885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.205092 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Couch_07.prefab
+  artifactKey: Guid(a18733c71fe57214d9d0e4b8c2613b81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Couch_07.prefab using Guid(a18733c71fe57214d9d0e4b8c2613b81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35749ca6b61a19df47ff229969982072') in 0.025014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Cupboard_03.prefab
+  artifactKey: Guid(8aeb2c530b2dae14f96b80d9996b8653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Cupboard_03.prefab using Guid(8aeb2c530b2dae14f96b80d9996b8653) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70d55d5c7229b0845384a62cbf31a30f') in 0.017038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Cupboards.prefab
+  artifactKey: Guid(ab67ed7e141f20343bead113dbfca834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Cupboards.prefab using Guid(ab67ed7e141f20343bead113dbfca834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de8bf3d0c547eb9fca9659a424a02f5a') in 0.017670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Cupboards_Black.prefab
+  artifactKey: Guid(dcb39fe052052394f892a7353523abe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Cupboards_Black.prefab using Guid(dcb39fe052052394f892a7353523abe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7df9097c4aa7c38309c616c27f85bd2') in 0.015694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Cushion_02.prefab
+  artifactKey: Guid(0ecec28d7cc89bc4a9ba47fd5e7a4e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Cushion_02.prefab using Guid(0ecec28d7cc89bc4a9ba47fd5e7a4e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '366ec1f5814409e9acb5b3fce513840a') in 0.016324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Desk_02.prefab
+  artifactKey: Guid(2738554aab750354391cd2d6766dff98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Desk_02.prefab using Guid(2738554aab750354391cd2d6766dff98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bf859be40f44eb82a942f57c484d627') in 0.015817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Cushion_01.prefab
+  artifactKey: Guid(671c76ce47c226044b6289b25e8a203b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Cushion_01.prefab using Guid(671c76ce47c226044b6289b25e8a203b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03bd396539c7a946478a87547d3e057b') in 0.016255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Desk_01.prefab
+  artifactKey: Guid(1b0e4052847966a488cf35c135cfbd2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Desk_01.prefab using Guid(1b0e4052847966a488cf35c135cfbd2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '467a41ab3d17a43a22938c5836467956') in 0.015679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Curtains_Blue.prefab
+  artifactKey: Guid(2037af698594e6a4497fdcead2541d3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Curtains_Blue.prefab using Guid(2037af698594e6a4497fdcead2541d3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b522c37a5875fc9950da707082a79ea9') in 0.016596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Couch_08.prefab
+  artifactKey: Guid(bc1ed959f28b8e742b2b1638250c4bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Couch_08.prefab using Guid(bc1ed959f28b8e742b2b1638250c4bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e473b62c62b27e63ed12a6a59009f38') in 0.017150 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.997113 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_DoubleBed_Grey.prefab
+  artifactKey: Guid(d88965db5a659e4478caa5547555f289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_DoubleBed_Grey.prefab using Guid(d88965db5a659e4478caa5547555f289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4118327166c9268f7daa19dbaa8a2be6') in 0.027861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Draw_01.prefab
+  artifactKey: Guid(8027740e2ac46c44195cfa8366f70450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Draw_01.prefab using Guid(8027740e2ac46c44195cfa8366f70450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cfdf081165300da54aa9dc47fae4cc3') in 0.017909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Draw_06.prefab
+  artifactKey: Guid(3da5dbd05dc83f9429000d67c8a08d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Draw_06.prefab using Guid(3da5dbd05dc83f9429000d67c8a08d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '126a4a3e66fd9a8b9ac7ebadbfb3d6a4') in 0.016275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Draw_04.prefab
+  artifactKey: Guid(2112bed42f2f68846abfe5f4114d670a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Draw_04.prefab using Guid(2112bed42f2f68846abfe5f4114d670a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39a257428b63235dd1792c73cd2631e6') in 0.017727 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Fireplace_01.prefab
+  artifactKey: Guid(4e1e7729165aea2428d6c354d914cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Fireplace_01.prefab using Guid(4e1e7729165aea2428d6c354d914cdc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d7fda718a338d67e3c1f25d9e54fef') in 0.018420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_DoubleBed_Pink.prefab
+  artifactKey: Guid(258b247bff92ee24ebca7beb5bd3353b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_DoubleBed_Pink.prefab using Guid(258b247bff92ee24ebca7beb5bd3353b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db890ed457d4b45d7cf5990f3190dbe5') in 0.015399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Dresser_02.prefab
+  artifactKey: Guid(31365afa0cc7c6b46bfeee547f358b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Dresser_02.prefab using Guid(31365afa0cc7c6b46bfeee547f358b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75e1f45883c918737207050d8fb620de') in 0.016637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Fireplace_02.prefab
+  artifactKey: Guid(195ca1e9666b701459e6e10ad7a27992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Fireplace_02.prefab using Guid(195ca1e9666b701459e6e10ad7a27992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ceea47bae0c76db1868f401a5ee0138') in 0.014180 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.189587 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Food_Bowl_02.prefab
+  artifactKey: Guid(129c6b5880004d94598ac7ccf8a68b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Food_Bowl_02.prefab using Guid(129c6b5880004d94598ac7ccf8a68b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae0a932caddbda4a36447f0d7422c2f') in 0.026484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Game_02.prefab
+  artifactKey: Guid(29f1573c479c8cc479e91fb41aa0cdb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Game_02.prefab using Guid(29f1573c479c8cc479e91fb41aa0cdb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74c311a303eb858e9c4626ba25616104') in 0.018891 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Insect_Frame_02.prefab
+  artifactKey: Guid(2385e23c1146d35418014bb52582049f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Insect_Frame_02.prefab using Guid(2385e23c1146d35418014bb52582049f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '586ca700ef170051e96d40ec48187399') in 0.018212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Insect_Frame_03.prefab
+  artifactKey: Guid(c8782ba1607055049947e23f11da596b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Insect_Frame_03.prefab using Guid(c8782ba1607055049947e23f11da596b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b303e26c827aa361ea2796d86f112978') in 0.014855 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Lamp_02.prefab
+  artifactKey: Guid(15e534e98cfcba34f896a918e95c52ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Lamp_02.prefab using Guid(15e534e98cfcba34f896a918e95c52ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0600168be3d6b71782911860fdd12aae') in 0.016318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_KitchenSink_Black.prefab
+  artifactKey: Guid(e754f5928360aeb40937379118bc8f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_KitchenSink_Black.prefab using Guid(e754f5928360aeb40937379118bc8f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dad74092fa6c719907da70bc5b77bd51') in 0.016301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Joystick.prefab
+  artifactKey: Guid(d24c3ea92d2f301439e6c66d9412617c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Joystick.prefab using Guid(d24c3ea92d2f301439e6c66d9412617c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9c124077e8f010ea4fd90adeb7e6de4') in 0.016288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Insect_Frame_01.prefab
+  artifactKey: Guid(7a29955af7f87eb419e28bd4466a9add) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Insect_Frame_01.prefab using Guid(7a29955af7f87eb419e28bd4466a9add) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0925c5b231907122fe091a13a900c9b8') in 0.016004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Food_Bowl_03.prefab
+  artifactKey: Guid(5cfdc1d2a7a4b304883c85de195997e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Food_Bowl_03.prefab using Guid(5cfdc1d2a7a4b304883c85de195997e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa4262e88b2178c7f178a270021736da') in 0.014992 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Game_01.prefab
+  artifactKey: Guid(7af93ea503b158c43ad16ee39d002742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Game_01.prefab using Guid(7af93ea503b158c43ad16ee39d002742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aad48aa83c8591108ae0afa0156d51f') in 0.016738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_KitchenSink_Blue.prefab
+  artifactKey: Guid(b6c0e834ba5b6ee42b028093bf6faea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_KitchenSink_Blue.prefab using Guid(b6c0e834ba5b6ee42b028093bf6faea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca8947caa9f939d70de5f20313fb70be') in 0.016946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Fork_01.prefab
+  artifactKey: Guid(23f3a46c37351da4aba0cba5ed2f7e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Fork_01.prefab using Guid(23f3a46c37351da4aba0cba5ed2f7e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '691e0effaebca6ca63d6abbdd3b01422') in 0.016042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.079010 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Lamp_06.prefab
+  artifactKey: Guid(c38a3c0e150435d46802729bf244e4e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Lamp_06.prefab using Guid(c38a3c0e150435d46802729bf244e4e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '709bb8a2703151ebf6d50f58ad7dad43') in 0.017573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Oven_Blue.prefab
+  artifactKey: Guid(ec69662f19765e94d8003bf00be872d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Oven_Blue.prefab using Guid(ec69662f19765e94d8003bf00be872d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13b39743abf0d52c42b400147808f0c8') in 0.019166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Lights_02.prefab
+  artifactKey: Guid(a15efef3ad85e8a4daf1983a97bcbe32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Lights_02.prefab using Guid(a15efef3ad85e8a4daf1983a97bcbe32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adb5a7f8d191484c805f7f286679ccea') in 0.016218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Placemat_03.prefab
+  artifactKey: Guid(119565df326b9d94dab0c4830c512fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Placemat_03.prefab using Guid(119565df326b9d94dab0c4830c512fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52966b7ba71e8931ae9efe3f51d0db26') in 0.016469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Oven_White.prefab
+  artifactKey: Guid(e56c88810b9604248bcdf20146bf57e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Oven_White.prefab using Guid(e56c88810b9604248bcdf20146bf57e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3409ed90ca5c9e527de6f89c0e08ff04') in 0.017391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Microwave.prefab
+  artifactKey: Guid(8772bf451d39350449558b866ef0dc9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Microwave.prefab using Guid(8772bf451d39350449558b866ef0dc9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a603befb8509ba12f88132124718a62') in 0.016165 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_LightSwitch.prefab
+  artifactKey: Guid(94256b3a1d1ee5e479b04601eee8285b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_LightSwitch.prefab using Guid(94256b3a1d1ee5e479b04601eee8285b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '972acbb75770bbecad54881a87c191f4') in 0.016607 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Oven_Grey.prefab
+  artifactKey: Guid(a27833de5a03c434ba27e397f2f1cc00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Oven_Grey.prefab using Guid(a27833de5a03c434ba27e397f2f1cc00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6af791e12033d0e8c21636ff5e5c3be0') in 0.015238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.139724 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Plant_01.prefab
+  artifactKey: Guid(4fd7d70b73418d24185f7bfcc335933a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Plant_01.prefab using Guid(4fd7d70b73418d24185f7bfcc335933a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb1ebbf3207786c6158143eecd9d8bc4') in 0.019144 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_RangeHood.prefab
+  artifactKey: Guid(5e07ce35bcbf3ab4d8935754c39f5715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_RangeHood.prefab using Guid(5e07ce35bcbf3ab4d8935754c39f5715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ccfc5ad8f1cac70287a1352ddaad9ba') in 0.018057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_PowerPoint.prefab
+  artifactKey: Guid(9ce051096752d29459d72c427c891cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_PowerPoint.prefab using Guid(9ce051096752d29459d72c427c891cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9981b6fc3b279caf5253287e5988db9') in 0.016866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_RubbishBin_01.prefab
+  artifactKey: Guid(46d41ac900beb3e4cae5303af1c562a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_RubbishBin_01.prefab using Guid(46d41ac900beb3e4cae5303af1c562a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22915400af628d59fe0c18d22810db6f') in 0.015940 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_shelf_02.prefab
+  artifactKey: Guid(47917b9d0d2ffbb409fef02b5abc1cb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_shelf_02.prefab using Guid(47917b9d0d2ffbb409fef02b5abc1cb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b2ff8a44c49263291100859ae6af450') in 0.015690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Shelf_07.prefab
+  artifactKey: Guid(606eaa43cd29a1b4da7738f4d1e59064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Shelf_07.prefab using Guid(606eaa43cd29a1b4da7738f4d1e59064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bca95c5965c19d56a01102848fe1c1c7') in 0.015763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Rug_02.prefab
+  artifactKey: Guid(cae28b112979e1648a07416fd5ece323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Rug_02.prefab using Guid(cae28b112979e1648a07416fd5ece323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b655d85ed19b4cba9da1ba7c5e22ba9') in 0.014473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Shelf_03.prefab
+  artifactKey: Guid(f333a1e7813ce694eb07abf5197730fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Shelf_03.prefab using Guid(f333a1e7813ce694eb07abf5197730fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9204b7cfb0cfb03fc4f64714a6ab7d7') in 0.016136 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Rug_04.prefab
+  artifactKey: Guid(252f6b25141960e42b6a86f5c29be9c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Rug_04.prefab using Guid(252f6b25141960e42b6a86f5c29be9c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa12e2fa448f83187b1608492b6b79cc') in 0.018654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Plate_01.prefab
+  artifactKey: Guid(e13710708cbeaf24586a9261713070af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Plate_01.prefab using Guid(e13710708cbeaf24586a9261713070af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '074fbc1c89952b707ffa0a96ffe46100') in 0.016086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Shelf_06.prefab
+  artifactKey: Guid(78d779cdc7a86f84ea32ce41fea709c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Shelf_06.prefab using Guid(78d779cdc7a86f84ea32ce41fea709c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64613c28ac87ae29bcf0d45143a40f49') in 0.016255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Plant_02.prefab
+  artifactKey: Guid(2d48a06d54fb00241b8b83b754e8f430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Plant_02.prefab using Guid(2d48a06d54fb00241b8b83b754e8f430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dd7b0676626a3fd5eabf94aa660a0a5') in 0.017387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Rug_03.prefab
+  artifactKey: Guid(99c4648a4f51d3546834cb2ff37dd1e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Rug_03.prefab using Guid(99c4648a4f51d3546834cb2ff37dd1e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bbf02a6084fa591ae201996477117e7') in 0.015253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.035097 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Shelf_011.prefab
+  artifactKey: Guid(fe433344ebe20bd458db356e4587a442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Shelf_011.prefab using Guid(fe433344ebe20bd458db356e4587a442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0706921b015375e7aa6c0a1d51536f63') in 0.016594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Shelf_013.prefab
+  artifactKey: Guid(3e31ac35a4cac094d88a9c674543c265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Shelf_013.prefab using Guid(3e31ac35a4cac094d88a9c674543c265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd37576c13d6ded2e9161195bae2b0aea') in 0.017334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_SingleBed_Red.prefab
+  artifactKey: Guid(68c0f984aad150444a3833baddb15830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_SingleBed_Red.prefab using Guid(68c0f984aad150444a3833baddb15830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d33d9361da757509f0dcd1086834b6e') in 0.017243 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Small_Table_03.prefab
+  artifactKey: Guid(e00a4d2563847644e9550edb7c97accd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Small_Table_03.prefab using Guid(e00a4d2563847644e9550edb7c97accd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6fa2a9abdc006e9096ad3650bdf969c') in 0.016255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_SoapDish.prefab
+  artifactKey: Guid(9728a2053897b184da51681917ba4f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_SoapDish.prefab using Guid(9728a2053897b184da51681917ba4f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '642408c5182bf08f09e23a5824ff5610') in 0.015372 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Small_Table_07.prefab
+  artifactKey: Guid(5fbb66e86ebb8164b9ecb3ba164222f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Small_Table_07.prefab using Guid(5fbb66e86ebb8164b9ecb3ba164222f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44b3e609af95bd6ae5d2649d3e42cf7a') in 0.017572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Shower.prefab
+  artifactKey: Guid(4efde45a3a0e09a40b93f9a626558df7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Shower.prefab using Guid(4efde45a3a0e09a40b93f9a626558df7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2842a67bccfd3fed7e37d3d27cd22009') in 0.015408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_SingleBed_Pink.prefab
+  artifactKey: Guid(aea007d8ff342b54fac8c8990905e7df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_SingleBed_Pink.prefab using Guid(aea007d8ff342b54fac8c8990905e7df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59c2c7966434d4685155b43efe9dae85') in 0.016322 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Small_Table_02.prefab
+  artifactKey: Guid(d833c617f6bd5af49b19167beab2e7ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Small_Table_02.prefab using Guid(d833c617f6bd5af49b19167beab2e7ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '315dbd26674ec603ff25aaa319987f03') in 0.015271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_SingleBed_Yellow.prefab
+  artifactKey: Guid(fc70e6cf9c927614fb75b616f7e4b4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_SingleBed_Yellow.prefab using Guid(fc70e6cf9c927614fb75b616f7e4b4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffb23e7b51a893f6277101a965dd6b86') in 0.016692 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.113044 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Speaker_02.prefab
+  artifactKey: Guid(dfa46c3bc18fcd94eac1b9e35d20a86d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Speaker_02.prefab using Guid(dfa46c3bc18fcd94eac1b9e35d20a86d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7cce39d21b6e27606a280f652cb68ef') in 0.024958 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Table_01.prefab
+  artifactKey: Guid(c76ee64e6720f2d4e9d299907e45e8ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Table_01.prefab using Guid(c76ee64e6720f2d4e9d299907e45e8ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c824680de3bf11f8a63c89234e4ae971') in 0.018943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Toilet_02.prefab
+  artifactKey: Guid(fa141d67b2cc1a842ba2f51bf6e5cd66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Toilet_02.prefab using Guid(fa141d67b2cc1a842ba2f51bf6e5cd66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94687e93634ce6b3b0a02b962acea47f') in 0.015881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_TowelRail.prefab
+  artifactKey: Guid(ed721f45a1eb666429bd907bcf4b1fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_TowelRail.prefab using Guid(ed721f45a1eb666429bd907bcf4b1fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '023aba327437d29265fdd4bb4320a98a') in 0.016686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Table_05.prefab
+  artifactKey: Guid(0bd40985244d4f346bb694be9e361776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Table_05.prefab using Guid(0bd40985244d4f346bb694be9e361776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '224d34c5634457c87ac639e709f557db') in 0.016494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_ToiletRoll.prefab
+  artifactKey: Guid(a702a13c1c0498949addf1de2fa01481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_ToiletRoll.prefab using Guid(a702a13c1c0498949addf1de2fa01481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39c304de87c001e027a4f6a51b267d5c') in 0.017617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Toaster.prefab
+  artifactKey: Guid(4e08cfdff187e564f83fa71a461c0d3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Toaster.prefab using Guid(4e08cfdff187e564f83fa71a461c0d3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33357cccfe13bee692ccfd0a7e885a52') in 0.016459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_TowelBig_Green.prefab
+  artifactKey: Guid(b7310c5730b049b4db2bcf8496db8c35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_TowelBig_Green.prefab using Guid(b7310c5730b049b4db2bcf8496db8c35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '738c74b4471bdd68f6f963d5c2896ea5') in 0.016886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_ToiletBrush_01.prefab
+  artifactKey: Guid(ebb8f40b5e005cc4da5979b2eb1f61b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_ToiletBrush_01.prefab using Guid(ebb8f40b5e005cc4da5979b2eb1f61b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04dc9516a3e7a945f7f6655fcbbd1b5d') in 0.018426 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Speaker_03.prefab
+  artifactKey: Guid(c0608dab4d71e874c9197859d3a25eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Speaker_03.prefab using Guid(c0608dab4d71e874c9197859d3a25eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbae7dcb37a4c5bffb4348ecab94c638') in 0.015256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.103710 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Turkey_01.prefab
+  artifactKey: Guid(702ec12b9bff4de40a067fb2efbb7d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Turkey_01.prefab using Guid(702ec12b9bff4de40a067fb2efbb7d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfa91f8539e4d30696bde230ce418f9b') in 0.016238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Tv_01.prefab
+  artifactKey: Guid(a78134aa082b3f34d907410841558b32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Tv_01.prefab using Guid(a78134aa082b3f34d907410841558b32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1469901da644a6649e34003468163aa') in 0.018280 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Tv_04.prefab
+  artifactKey: Guid(411f4b9e47e17a145b763c0040017737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Tv_04.prefab using Guid(411f4b9e47e17a145b763c0040017737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e22ecd4e3623ad48c2d0213eb8a73f9d') in 0.018614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_WallArt_02.prefab
+  artifactKey: Guid(e742d255ef0d9be46bc1988d06c66642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_WallArt_02.prefab using Guid(e742d255ef0d9be46bc1988d06c66642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28181f611007ef43910a37dfc05ee2dd') in 0.016296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Wardrobe_02.prefab
+  artifactKey: Guid(d5e907dd31fb2ee48a72634432dfd913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Wardrobe_02.prefab using Guid(d5e907dd31fb2ee48a72634432dfd913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a86cff85aa5d8123bf0b767bec2a26e') in 0.016988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_WallArt_01.prefab
+  artifactKey: Guid(3ec52e9e24d7b1f42b42ceeedec32352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_WallArt_01.prefab using Guid(3ec52e9e24d7b1f42b42ceeedec32352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e29fa17a4a6cd31652eb4ab3b0459ff') in 0.018456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Turkey_02.prefab
+  artifactKey: Guid(8978176f336db1c4fb533d7d62ccef58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Turkey_02.prefab using Guid(8978176f336db1c4fb533d7d62ccef58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9394ee3e04dcece2f762eaf1250bab5d') in 0.017180 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Tv_02.prefab
+  artifactKey: Guid(4fec49d9891330242be2460e74cfdc54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Tv_02.prefab using Guid(4fec49d9891330242be2460e74cfdc54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '877855cb7ae49b46167aad96a465054a') in 0.016747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Tv_06.prefab
+  artifactKey: Guid(d2bf346fdfc6bd44b855c94fb4be3ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Tv_06.prefab using Guid(d2bf346fdfc6bd44b855c94fb4be3ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '434b9380ad1bc102b4b1b67c760529fb') in 0.017061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Vcr.prefab
+  artifactKey: Guid(8d4d93a2d9a853f4ab9ebab7766abcdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Vcr.prefab using Guid(8d4d93a2d9a853f4ab9ebab7766abcdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9f34ae6f31138ca9c7451acad9af3d9') in 0.014808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.070110 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Wall_01_Yellow.prefab
+  artifactKey: Guid(a5c4a01ce1f0def488d5112f01490f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Wall_01_Yellow.prefab using Guid(a5c4a01ce1f0def488d5112f01490f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ed04ccd1f0179e79c4eb461b3de0e3d') in 0.015312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Wall_02_Blue.prefab
+  artifactKey: Guid(608f803618a6f7643919c2a66c8f826e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Wall_02_Blue.prefab using Guid(608f803618a6f7643919c2a66c8f826e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2491da68a555cd11fd901af0b4c5af9') in 0.020213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.013105 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Wall_02_Red.prefab
+  artifactKey: Guid(99d08468d4ed1b5459c326cd1cba6036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Wall_02_Red.prefab using Guid(99d08468d4ed1b5459c326cd1cba6036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6946789143cb7ac402431dd6486d27d') in 0.018815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Wall_Door_02_Blue.prefab
+  artifactKey: Guid(a7f4bc826bd3b4f40a05b31437bb84f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Wall_Door_02_Blue.prefab using Guid(a7f4bc826bd3b4f40a05b31437bb84f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd48a84a1c9f6254da0296757b5c26a5') in 0.017182 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Wall_Window_01_Grey.prefab
+  artifactKey: Guid(06596539b2e2b4248b2d88b80b79a9f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Wall_Window_01_Grey.prefab using Guid(06596539b2e2b4248b2d88b80b79a9f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07e4abebd6e47f5e3685d56ed9229b29') in 0.016716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Wall_Door_01_Blue.prefab
+  artifactKey: Guid(2927856942b23d54296a5ada1c0bb7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Wall_Door_01_Blue.prefab using Guid(2927856942b23d54296a5ada1c0bb7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a141ade0d2a0402c08e4a36445f1f392') in 0.020251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Wall_Door_01_Grey.prefab
+  artifactKey: Guid(c5f38da3050cb02439779a0f8c63c844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Wall_Door_01_Grey.prefab using Guid(c5f38da3050cb02439779a0f8c63c844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec2bc913dbdf2bf2f2c965f62d6192ae') in 0.018909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Wall_Window_02_Grey.prefab
+  artifactKey: Guid(60cf07c6393a1a0469dfaf30f4a90449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Wall_Window_02_Grey.prefab using Guid(60cf07c6393a1a0469dfaf30f4a90449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '600878795ef533eb28726db1e4943f04') in 0.016493 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Wall_Window_01_Blue.prefab
+  artifactKey: Guid(97605585327ab974490e5a6c8e88cc69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Wall_Window_01_Blue.prefab using Guid(97605585327ab974490e5a6c8e88cc69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '690e0d0510c51cec57f4ce3d7b70e88c') in 0.016260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Wall_Door_01_Yellow.prefab
+  artifactKey: Guid(7a0010a2005c9f54193ccd928b2d5819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Wall_Door_01_Yellow.prefab using Guid(7a0010a2005c9f54193ccd928b2d5819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e0ba92ac1a700f133010eadaa24eb4') in 0.017857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Wall_Window_01_Yellow.prefab
+  artifactKey: Guid(7de4ca744c977c743a1f3080bc83a7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Wall_Window_01_Yellow.prefab using Guid(7de4ca744c977c743a1f3080bc83a7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2d0af355b590682f3061c2f911e4bcb') in 0.019433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Wall_Door_01_White.prefab
+  artifactKey: Guid(0300bd4c1c4130c41b4ba1b3e353b48c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Wall_Door_01_White.prefab using Guid(0300bd4c1c4130c41b4ba1b3e353b48c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0220c7a1798a1bce5a001a33fe97b284') in 0.017225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.053507 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Wall_Window__2_Red.prefab
+  artifactKey: Guid(11b97c1495394be4e8fa4f606bca01ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Wall_Window__2_Red.prefab using Guid(11b97c1495394be4e8fa4f606bca01ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de3e40c7a3fa6236cd3fc609ee2ed79f') in 0.015259 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005153 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Owner\Documents\Fardown\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Owner\Documents\Fardown\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.188 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1189ms)
+		BeginReloadAssembly (172ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (870ms)
+			LoadAssemblies (111ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (351ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (321ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (212ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3175 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (50.7 KB). Loaded Objects now: 3670.
+Memory consumption went from 119.4 MB to 119.3 MB.
+Total: 3.528900 ms (FindLiveObjects: 0.265900 ms CreateObjectMapping: 0.245800 ms MarkObjects: 2.934200 ms  DeleteObjects: 0.082100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005204 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Owner\Documents\Fardown\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Owner\Documents\Fardown\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.205 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1206ms)
+		BeginReloadAssembly (169ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (922ms)
+			LoadAssemblies (109ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (356ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (364ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (231ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.00 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3197 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (50.9 KB). Loaded Objects now: 3690.
+Memory consumption went from 120.1 MB to 120.0 MB.
+Total: 3.386100 ms (FindLiveObjects: 0.348900 ms CreateObjectMapping: 0.217800 ms MarkObjects: 2.738100 ms  DeleteObjects: 0.080500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 917.745749 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Door.prefab
+  artifactKey: Guid(a32e9995f50889947b8e7a3d65fd3560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Door.prefab using Guid(a32e9995f50889947b8e7a3d65fd3560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a1f9c36c501827ab9557eb30c5c2858') in 0.094851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_BathFull.prefab
+  artifactKey: Guid(4498d2aa0fc7b7046a7cb5f207bec26f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_BathFull.prefab using Guid(4498d2aa0fc7b7046a7cb5f207bec26f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '929f8d6bc1430c051e38934ee8a509e2') in 0.015936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_BathroomCabinet_White1.prefab
+  artifactKey: Guid(4567f6a4db2b6d245bae882bb257f45d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_BathroomCabinet_White1.prefab using Guid(4567f6a4db2b6d245bae882bb257f45d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef4011150f66f250df5db2d8481e6e3b') in 0.017761 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Big_Chair_01.prefab
+  artifactKey: Guid(d7f5409e4fd8a7243aab4cf8d1a20a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Big_Chair_01.prefab using Guid(d7f5409e4fd8a7243aab4cf8d1a20a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41055f1b9275bb3e66315a8270b7967c') in 0.010163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_BathroomCabinet_White.prefab
+  artifactKey: Guid(ddf08b15f43baeb4a966d7fc69cd0c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_BathroomCabinet_White.prefab using Guid(ddf08b15f43baeb4a966d7fc69cd0c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98d0743c4217d45d1871ccb771d404c4') in 0.015567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_BathMat_Red.prefab
+  artifactKey: Guid(e23b3f6698d0faf46be7802581086357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_BathMat_Red.prefab using Guid(e23b3f6698d0faf46be7802581086357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdfd3b14dc9ba37f8f4929d2ad8d24ba') in 0.014340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Floor_Vinyl.prefab
+  artifactKey: Guid(49f913411ec2b0a439b50217c240850e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Floor_Vinyl.prefab using Guid(49f913411ec2b0a439b50217c240850e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f52e5a7a3c67fa3f93015a9d9b3db03b') in 0.017350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Big_Chair_02.prefab
+  artifactKey: Guid(8b07fe22c88a2114092f0296ecf7b3cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Big_Chair_02.prefab using Guid(8b07fe22c88a2114092f0296ecf7b3cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81fc4ad41ff45dc6d1b65337486831cf') in 0.019334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Floor_Wood.prefab
+  artifactKey: Guid(aa649362b365a3f4eb283c3cd3c4da91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Floor_Wood.prefab using Guid(aa649362b365a3f4eb283c3cd3c4da91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '265983ab42eedf03616a6f0fc570dca2') in 0.010783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_BathroomCabinet_Brown.prefab
+  artifactKey: Guid(bae6065199ad43d42a7006e115807a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_BathroomCabinet_Brown.prefab using Guid(bae6065199ad43d42a7006e115807a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dae12c412daaaa376233f2b83f150b6') in 0.018556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_BathMat_Blue.prefab
+  artifactKey: Guid(01f76d3b6fc373f489f1ffc8ec9cb690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_BathMat_Blue.prefab using Guid(01f76d3b6fc373f489f1ffc8ec9cb690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7196486b73b7333896f9b53d8e400fe') in 0.014672 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.481490 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Big_Clock.prefab
+  artifactKey: Guid(01aabf04aa6a82741b8b0e2492e943ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Big_Clock.prefab using Guid(01aabf04aa6a82741b8b0e2492e943ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06e93c1d6eba6e0beaeff74a64a5ff14') in 0.018057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_BunkBed_Pink.prefab
+  artifactKey: Guid(2f2757609ec32ae40b2ae8ebbfd8a4d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_BunkBed_Pink.prefab using Guid(2f2757609ec32ae40b2ae8ebbfd8a4d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '934795f38fcb23aa35983f3731d791c1') in 0.011603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_BunkBed_Blue.prefab
+  artifactKey: Guid(7743c8fe3b54b0b468837bc0140a04a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_BunkBed_Blue.prefab using Guid(7743c8fe3b54b0b468837bc0140a04a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e3b14d927d94300b92170815c103d5e') in 0.014978 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Bunny_Ear.prefab
+  artifactKey: Guid(75a2706c0babc5f4c9519170805a0323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Bunny_Ear.prefab using Guid(75a2706c0babc5f4c9519170805a0323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84a11528c1226d5378c90c8ddf121e3a') in 0.020042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/SimpleInteriorsHouses/Prefabs/Prop_Candle_01.prefab
+  artifactKey: Guid(8c283e87c3adcf74db5e0886c7065a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleInteriorsHouses/Prefabs/Prop_Candle_01.prefab using Guid(8c283e87c3adcf74db5e0886c7065a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81031052c6e23ed0a0e52b9ae155d14b') in 0.016428 seconds 
