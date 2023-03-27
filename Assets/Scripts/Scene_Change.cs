@@ -11,6 +11,7 @@ public class Scene_Change : MonoBehaviour
     //private Player_Input pi;
 
     public Vector3 thisScenePosition;
+    public float thisyRotation;
     //public Transform playerSpawnPosition, playerLeavePosition;
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class Scene_Change : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             gm.newScenePosition = thisScenePosition;
+            gm.yRotation = thisyRotation;
             //pi = other.gameObject.GetComponent<Player_Input>();
             SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
             //playerSpawnPosition = new Vector3(other.position.x + 2f, other.position.y, other.position.z + 2f);

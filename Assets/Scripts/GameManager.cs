@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     //Holds inventory 
     //Currently it's going to be a number system
-    public float itemCount, playerHealth;
+    public float itemCount, playerHealth, yRotation;
     public bool isHiding, isStill, isAttracting;
     public Vector3 newScenePosition;
     private static GameManager gmInstance;

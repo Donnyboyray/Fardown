@@ -28,6 +28,7 @@ public class Player_Input : MonoBehaviour
     {
         gm = GameObject.FindGameObjectWithTag("gm").GetComponent<GameManager>();
         this.transform.position = gm.newScenePosition;
+        this.transform.rotation = Quaternion.Euler(0, gm.yRotation, 0);
         Log(this.transform.position);
         gm.isHiding = false; //Set to false just in case
         gm.isStill = false;

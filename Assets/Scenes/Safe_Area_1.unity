@@ -267,7 +267,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 102766237}
   m_LocalRotation: {x: -0, y: -0.011324626, z: -0, w: 0.99993587}
-  m_LocalPosition: {x: 23.5, y: 1, z: 26.7}
+  m_LocalPosition: {x: 2.2, y: 1, z: 21.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1712,6 +1712,10 @@ PrefabInstance:
       value: Main_Area
       objectReference: {fileID: 0}
     - target: {fileID: 5880796360312500901, guid: 50418ba0b681ff74fb89151435eae5d5, type: 3}
+      propertyPath: thisyRotation
+      value: 178.028
+      objectReference: {fileID: 0}
+    - target: {fileID: 5880796360312500901, guid: 50418ba0b681ff74fb89151435eae5d5, type: 3}
       propertyPath: thisScenePosition.x
       value: 11.3
       objectReference: {fileID: 0}
@@ -2986,6 +2990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemCount: 0
   playerHealth: 5
+  yRotation: 0
   isHiding: 0
   isStill: 0
   isAttracting: 0
