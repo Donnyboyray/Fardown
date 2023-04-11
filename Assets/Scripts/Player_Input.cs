@@ -12,10 +12,13 @@ public class Player_Input : MonoBehaviour
     public Alien_AI aai;
 
     //MOVEMENT VARIABLES
-    public float speed; //Walking
-    public float runningSpeed;
+
+    /*public float speed; //Walking
+    public float runningSpeed;*/
+    //^^ Moved to Game Manager ^^
+
     public float runningTimer, runningRecoup; //Running
-    private float backupSpeed = 4f; //backing up 
+    private float rotatespeed = 6f;
 
     //RAYCAST
     Ray ray; //Ray that follows camera
@@ -63,7 +66,7 @@ public class Player_Input : MonoBehaviour
         {
             if(runningTimer > 0f)
             {
-                this.transform.Translate(Vector3.forward * Time.deltaTime * runningSpeed);
+                this.transform.Translate(Vector3.forward * Time.deltaTime * gm.runningSpeed);
                 gm.isStill = false;
                 runningTimer--;
                 //Log("Running");
@@ -71,7 +74,7 @@ public class Player_Input : MonoBehaviour
             }
             else if (runningTimer < 0f)
             {
-                this.transform.Translate(Vector3.forward * Time.deltaTime * speed);
+                this.transform.Translate(Vector3.forward * Time.deltaTime * gm.speed);
                 //Log("Is Still");
                 gm.isStill = false;
                 //Log("Out of breath");
@@ -90,7 +93,7 @@ public class Player_Input : MonoBehaviour
         //BACKWARDS
         if (Input.GetKey(KeyCode.S))
         {
-              this.transform.Translate(Vector3.back * Time.deltaTime * backupSpeed);
+              this.transform.Translate(Vector3.back * Time.deltaTime * gm.backupSpeed);
             //Uses a dif, private speed to go slower. Cannot be changed in game
               gm.isStill = false;
             //Log(gm.isStill);
@@ -99,7 +102,7 @@ public class Player_Input : MonoBehaviour
        
         else if (Input.GetKey(KeyCode.W))
         {
-            this.transform.Translate(Vector3.forward * Time.deltaTime * speed);
+            this.transform.Translate(Vector3.forward * Time.deltaTime * gm.speed);
             //Log("Is Still");
             gm.isStill = false;
             //Log(gm.isStill);
@@ -116,12 +119,12 @@ public class Player_Input : MonoBehaviour
         //LEFT
         if (Input.GetKey(KeyCode.A))
          {
-             this.transform.Rotate(new Vector3(0, -15f, 0) * Time.deltaTime * speed);
+             this.transform.Rotate(new Vector3(0, -15f, 0) * Time.deltaTime * rotatespeed);
          }
          //RIGHT
          if (Input.GetKey(KeyCode.D))
          {
-                this.transform.Rotate(new Vector3(0, 15f, 0) * Time.deltaTime * speed);
+                this.transform.Rotate(new Vector3(0, 15f, 0) * Time.deltaTime * rotatespeed);
          }
 
          //RAYCAST PHYSICS
@@ -144,25 +147,13 @@ public class Player_Input : MonoBehaviour
         }
 
     }
-    /*private void OnTriggerEnter(Collider other)
-    {
-
-        if(other.gameObject.CompareTag("Scene Change"))
-        {
-            sc = other.gameObject.GetComponent<Scene_Change>();
-        }
-
-    }*/
-
-
-
 
     private void OnCollisionStay(Collision other)
     {
         if(other.gameObject.CompareTag("Wall"))
         {
-            speed = 2f;
-            runningSpeed = 3f;
+            gm.speed = 2f;
+            gm.runningSpeed = 3f;
 
         }
     }
@@ -171,8 +162,8 @@ public class Player_Input : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Wall"))
         {
-            speed = 5f;
-            runningSpeed = 7f;
+            gm.speed = 5f;
+            gm.runningSpeed = 7f;
 
         }
     }

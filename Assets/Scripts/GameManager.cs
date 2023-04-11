@@ -13,6 +13,10 @@ public class GameManager : MonoBehaviour
     public Vector3 newScenePosition;
     private static GameManager gmInstance;
 
+    public float speed; //Walking
+    public float runningSpeed;
+    public float backupSpeed = 4f; //backing up 
+
 
     private void Awake()
     {
