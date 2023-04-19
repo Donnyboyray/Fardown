@@ -148,12 +148,12 @@ public class Player_Input : MonoBehaviour
 
     }
 
-    private void OnCollisionStay(Collision other)
+    private void OnCollisionEnter(Collision other)
     {
         if(other.gameObject.CompareTag("Wall"))
         {
-            gm.speed = 2f;
-            gm.runningSpeed = 3f;
+            gm.speed = 1f;
+            gm.runningSpeed = 2f;
 
         }
     }
