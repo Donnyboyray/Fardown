@@ -42,6 +42,22 @@ public class Player_Input : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Freezed player when dialogue is playing
+        if (DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            gm.speed = 0;
+            gm.runningSpeed = 0;
+            gm.backupSpeed = 0;
+
+
+        }
+        else
+        {
+            gm.speed = 5f;
+            gm.runningSpeed = 7f;
+            gm.backupSpeed = 4f;
+        }
+
         //Drawing Ray
         ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, -0.5f));
         //Inspector view of ray
