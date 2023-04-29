@@ -11,6 +11,7 @@ TagManager:
   - Attractable
   - gm
   - Enemy
+  - Door
   layers:
   - Default
   - TransparentFX
@@ -24,7 +25,7 @@ TagManager:
   - whatAreWalls
   - Attractable
   - NPC
-  - 
+  - whatAreDoors
   - 
   - 
   - 
