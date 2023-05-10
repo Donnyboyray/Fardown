@@ -20,13 +20,13 @@ public class NPC_AI : MonoBehaviour
 
     public float sightRange, autoWalkPointReset, lookSpeed;
     private bool playerInSightRange;
-    public bool idleWalking, isTalking;
+    public bool isIdleWalkingNPC, isTalking, idleWalking;
 
     public GameManager gm;
     // Start is called before the first frame update
     void Start()
     {
-        target = GameObject.Find("Player").transform;
+        target = null;
         gm = GameObject.Find("Game Manager").GetComponent<GameManager>();
         agent = GetComponent<NavMeshAgent>();
     }
@@ -45,6 +45,7 @@ public class NPC_AI : MonoBehaviour
             }
             else if (playerInSightRange)
             {
+                target = GameObject.Find("Player").transform;
                 //agent.SetDestination(target.position);
                 StopToTalk();
                 //isTalking = true;
@@ -52,6 +53,7 @@ public class NPC_AI : MonoBehaviour
         }
         else
         {
+            target = GameObject.Find("Player").transform;
             StopToTalk();
         }
     }
@@ -126,9 +128,13 @@ public class NPC_AI : MonoBehaviour
 
     private IEnumerator PauseAfterTalk()
     {
-        Log("Paused after interaction");
+        //Log("Paused after interaction");
         isTalking = false;
-        idleWalking = true; //Set later on to be random
-        yield return new WaitForSeconds(7);
+        if(isIdleWalkingNPC)
+        {
+            idleWalking = true;
+        }
+        target = null;
+        yield return new WaitForSeconds(2);
     }
 }

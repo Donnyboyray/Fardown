@@ -162,6 +162,11 @@ public class Player_Input : MonoBehaviour
          //RAYCAST PHYSICS
         if (Physics.Raycast(ray, out RaycastHit hit, maxDistance , interactableLayers))
         {
+
+            
+            db = hit.collider.gameObject.GetComponent<Door_Behavior>();
+            
+
             if (Input.GetKey(KeyCode.E))
             {
                 //Debug.Log("Interactable detected");
@@ -175,11 +180,17 @@ public class Player_Input : MonoBehaviour
                     Log("Pickup interacted with");
                 }
 
+               
                 if (hit.collider.CompareTag("Door"))
                 {
-                    db = hit.collider.gameObject.GetComponent<Door_Behavior>();
-                    db.ToggleDoor();
+                    if(!db.doorIsCooldown)
+                    {
+
+                        StartCoroutine(db.ToggleDoor());
+                    }
                 }
+                
+              
 
 
             }
@@ -191,7 +202,7 @@ public class Player_Input : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Wall"))
         {
-            Log("is Colliding");
+            //Log("is Colliding");
             gm.speed = 3f;
             gm.runningSpeed = 3f;
             rb.constraints = RigidbodyConstraints.FreezeRotation;
